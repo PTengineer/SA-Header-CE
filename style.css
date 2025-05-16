@@ -11,3 +11,102 @@ Requires PHP: 7.4
 Text Domain: headerexercise
 Private or professional use only
 */
+
+/* Header top group */
+/*header .top {*/
+/*    display: flex;*/
+/*    flex-direction: row;*/
+/*}*/
+
+
+/* Site Logo breakpoints */
+.wp-block-site-logo a, .wp-block-site-logo img {
+    color: #fff;
+    display: block;
+    margin-bottom: 5px;
+    max-width: 135px;
+}
+
+@media (min-width: 768px) {
+    .wp-block-site-logo a, .wp-block-site-logo img {
+        margin: 0;
+        max-width: 208px;
+    }
+}
+
+@media (min-width: 960px) {
+    .wp-block-site-logo a, .wp-block-site-logo img {
+        max-width: 256px;
+    }
+}
+
+/* Tagline and City */
+.tagline-city {
+    color: #e9e6e6;
+    font-size: 16px;
+    line-height: 1.4;
+    margin: 0 auto;
+    max-width: 220px;
+    text-align: center;
+}
+
+@media (max-width: 426px) {
+    div .tagline-city {
+        padding: 0 25px 0 0;
+        font-size: 14px;
+    }
+}
+
+/* Small Menu breakpoint */
+@media (max-width: 960px) {
+    .hidden-on-mobile {
+        display: none !important;
+    }
+}
+
+/* Big Menu breakpoint */
+body .wp-block-navigation__responsive-container-open:not(.always-shown) {
+    display: block !important;
+}
+body .wp-block-navigation__responsive-container:not(.hidden-by-default):not(.is-menu-open) {
+    display: none !important;
+}
+
+/* Show full navigation menu on large screens */
+@media (min-width: 960px) {
+    body .wp-block-navigation__responsive-container-open:not(.always-shown) {
+        display: none !important;
+    }
+
+    body .wp-block-navigation__responsive-container:not(.hidden-by-default):not(.is-menu-open) {
+        display: block !important;
+    }
+}
+
+/* Adjust menu icon position */
+.wp-block-navigation__responsive-container-open {
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+    position: absolute;
+    top: -25rem;    /* omit for easy to reach preference */
+    right: -1.25rem;
+    margin: 0;
+    transform: none;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    z-index: 3;
+}
+
+.wp-block-navigation__responsive-container-open svg{
+    width: 55px;
+    height: 55px;
+    stroke: #793330;
+    fill: #793330;
+}
+
+
+
+
