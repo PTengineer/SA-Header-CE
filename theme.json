@@ -2,6 +2,7 @@
   "$schema": "https://schemas.wp.org/trunk/theme.json",
   "version": 3,
   "settings": {
+    "appearanceTools": true,
     "color": {
       "palette": [
         {
@@ -58,12 +59,14 @@
   },
   "styles": {
     "blocks": {
+      "core/button": {
+        "border": {
+          "radius": "4px"
+        }
+      },
       "core/cover": {
         "spacing": {
-          "blockGap":"var:preset|spacing|60",
-          "padding": {
-
-          }
+          "blockGap":"var:preset|spacing|60"
         }
       },
       "core/group": {
