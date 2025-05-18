@@ -22,12 +22,3 @@ function headerexercise_style() {
 	);
 }
 add_action( 'wp_enqueue_scripts', 'headerexercise_style' );
-
-/**
- * Enqueue theme js file
- * @return void
- */
-function theme_scripts() {
-	wp_enqueue_script( 'headerexercise-script', get_template_directory_uri() . '/assets/js/hd1-script.js', array(), '1.0', true );
-}
-add_action( 'wp_enqueue_scripts', 'theme_scripts' );

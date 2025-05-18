@@ -86,11 +86,25 @@
       "fontFamily": "Arial, Helvetica, sans-serif"
     }
   },
+  "customTemplates": [
+    {
+      "name": "custom-page",
+      "title": "Custom Page Template",
+      "postTypes": [
+        "page"
+      ]
+    }
+  ],
   "templateParts": [
     {
       "name": "site-header",
       "area": "header",
       "title": "Header"
+    },
+    {
+      "name": "site-header-pg",
+      "area": "header-pg",
+      "title": "Header for Page"
     },
     {
       "name": "site-footer",
