@@ -59,7 +59,7 @@ This exercise was very exciting. A lot changed with WordPress since earlier vers
 ### Challenges
 
 * Submenu appearance is affected by the cover block overflow property as well as minimum height field in editor.
-    * This might be resolved by opting for a background image via style rule rather than using a cover block, or exploring another block container option that allows for background image while not altering the overall header height.is-light generated rules.
+    * This might be resolved by opting for a background image via style rule rather than using a cover block, or exploring another block container option that allows for background image while not altering the overall header height.
     * Less preferred option is a compromise for smaller than expected image on page header while preserving big menu and submenu appearance, applicable to mobile display.
 
     - [x] Relatively easy fix by cropping a copy to the desired height was applied however text color was set in editor to counter the is-light generated rules.
